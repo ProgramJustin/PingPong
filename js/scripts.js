@@ -1,6 +1,8 @@
 var numberArray = [];
 
-console.log(numberArray[0]);
+
+
+
 
 var inputToArray = function(userInput) {
 
@@ -19,32 +21,16 @@ if (numberArray[0] === userInput) {
           alert(userInput);
           i--;
           numberArray.join(" ");
-      }
-      if (userInput === 1) {
+      } else if (userInput === 1) {
         return false;
       }
 
 
-      if ((numberArray.length % 15) === 1) {
-        
-        numberArray.splice(0, 1, "Ping Pong");
-
-
-      } else if ((numberArray.length % 5) === 1) {
-          numberArray.splice(0, 1, "Pong");
-      } else if ((numberArray.length % 3) === 1) {
-          numberArray.splice(0, 1, "Ping");
-      }
-
     }
-
   }
 }
 
 
-
-// var numberArray = [userNumber];
-// console.log(userNumber);
 
 
 $(document).ready(function() {
@@ -56,7 +42,6 @@ $(document).ready(function() {
     var userInput = parseInt($('input').val());
 
     var pingPong = inputToArray(userInput);
-    alert("test");
 
     console.log(typeof userInput);
 
