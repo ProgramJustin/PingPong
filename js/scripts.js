@@ -9,13 +9,13 @@ if (numberArray[0] === undefined) {
 }
 
 if (numberArray[0] === userInput) {
+
   for (var i = 0; i < numberArray.length; i--) {
+
 
       numberArray.unshift(userInput -= 1);
 
-
-
-      if (i >= userInput && userInput === 1) {
+      if (i >= userInput && userInput === 0) {
           alert(userInput);
           i--;
           numberArray.join(" ");
@@ -23,10 +23,17 @@ if (numberArray[0] === userInput) {
       if (userInput === 0) {
         return false;
       }
+
+
       if ((numberArray.length % 15) === 0) {
 
-        numberArray.splice(-1 + 1, 1,"Ping Pong");
+        numberArray.splice(0, 1, "Ping Pong");
+
+
+      } else if ((numberArray.length % 5) === 0) {
+          numberArray.splice(0, 1, "Pong");
       }
+
     }
   }
 }
@@ -50,7 +57,7 @@ $(document).ready(function() {
 
     console.log(typeof userInput);
 
-    numberArray[0].hide();
+
     $("#result").text(numberArray);
 
 
