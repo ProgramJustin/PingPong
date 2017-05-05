@@ -2,5 +2,14 @@ var userNumber = "";
 
 
 $(document).ready(function() {
-alert("test");
+
+  $("form").submit(function(event) {
+    event.preventDefault();
+
+    var userInput = parseInt($('input').val());
+
+    console.log(typeof userInput);
+
+  });
+
 });
