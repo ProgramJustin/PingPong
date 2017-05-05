@@ -15,26 +15,29 @@ if (numberArray[0] === userInput) {
 
       numberArray.unshift(userInput -= 1);
 
-      if (i >= userInput && userInput === 0) {
+      if (i >= userInput && userInput === 1) {
           alert(userInput);
           i--;
           numberArray.join(" ");
       }
-      if (userInput === 0) {
+      if (userInput === 1) {
         return false;
       }
 
 
-      if ((numberArray.length % 15) === 0) {
-
+      if ((numberArray.length % 15) === 1) {
+        
         numberArray.splice(0, 1, "Ping Pong");
 
 
-      } else if ((numberArray.length % 5) === 0) {
+      } else if ((numberArray.length % 5) === 1) {
           numberArray.splice(0, 1, "Pong");
+      } else if ((numberArray.length % 3) === 1) {
+          numberArray.splice(0, 1, "Ping");
       }
 
     }
+
   }
 }
 
