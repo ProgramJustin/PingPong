@@ -1,7 +1,6 @@
+//BACK END LOGIC
+
 var numberArray = [];
-
-
-// alert(pingPong);
 
 
 var inputToArray = function(userInput) {
@@ -9,9 +8,7 @@ var inputToArray = function(userInput) {
 if (numberArray[0] === undefined) {
   numberArray.push(userInput);
 }
-
   for (var i = 0; i < numberArray.length; i--) {
-
 
       numberArray.unshift(userInput -= 1);
 
@@ -38,25 +35,10 @@ if (numberArray[0] === undefined) {
 
         } else if (userInput === 1) {
         return false;
-
     }
   }
 }
-// var pingArray = function(numberArray) {
-// alert(numberArray);
-//   for (j = 0 j >= numberArray.length / 2; i++) {
-//
-//
-//     if (pingPong === 0) {
-//
-//     alert(pingPong);
-//     }
-//   }
-// }
-
-
-
-
+//UI LOGIC
 
 $(document).ready(function() {
 
@@ -70,11 +52,6 @@ $(document).ready(function() {
     // console.log(numberArray);
     console.log(userInput);
 
-    // var PingPongResults = pingArray(numberArray);
-
     $("#result").text(numberArray);
-
-
   });
-
 });
