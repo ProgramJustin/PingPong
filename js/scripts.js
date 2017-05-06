@@ -49,6 +49,8 @@ $(document).ready(function() {
 
     var pingPongArray = inputToArray(userInput);
 
+    numberArray.toString();
+
     $("#result").append("<h4>" + numberArray + "</h4>");
 
   });

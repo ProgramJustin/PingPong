@@ -1,6 +1,8 @@
 * {
   margin-top: 25px;
 }
+
 .well, .jumbotron {
   border: 2px solid black;
+  text-align: center; 
 }
