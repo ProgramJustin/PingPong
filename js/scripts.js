@@ -2,7 +2,6 @@
 
 var numberArray = [];
 
-
 var inputToArray = function(userInput) {
 
 if (numberArray[0] === undefined) {
@@ -13,7 +12,7 @@ if (numberArray[0] === undefined) {
       numberArray.unshift(userInput -= 1);
 
         if ((numberArray[0] % 15) === 0) {
-          alert('test2');
+
           numberArray.shift();
           numberArray.unshift("Ping-Pong");
           numberArray.unshift((userInput - 1));
@@ -49,9 +48,10 @@ $(document).ready(function() {
     var userInput = parseInt($('input').val());
 
     var pingPongArray = inputToArray(userInput);
-    // console.log(numberArray);
-    console.log(userInput);
 
-    $("#result").text(numberArray);
+    $("#result").append("<h4>" + numberArray + "</h4>");
+
   });
+  event.preventDefault();
+
 });
