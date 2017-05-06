@@ -29,6 +29,13 @@ if (numberArray[0] === undefined) {
           numberArray.unshift((userInput - 1));
           numberArray.shift();
 
+        }  else if ((numberArray[0] % 3) === 0) {
+
+          numberArray.shift();
+          numberArray.unshift("Ping");
+          numberArray.unshift((userInput - 1));
+          numberArray.shift();
+
         } else if (userInput === 1) {
         return false;
 
