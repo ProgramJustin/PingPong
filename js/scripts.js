@@ -35,6 +35,7 @@ if (numberArray[0] === undefined) {
     }
   }
 }
+
 //UI LOGIC
 $(document).ready(function() {
 
