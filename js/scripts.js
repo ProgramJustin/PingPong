@@ -52,7 +52,10 @@ $(document).ready(function() {
 
     numberArray.toString();
 
-    $("#result").append("<h4>" + numberArray + "</h4>");
+    $("#result").append("<h1>" + numberArray + "</h1>");
+
+    numberArray = [];
+
 
   });
 
