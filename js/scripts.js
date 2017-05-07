@@ -45,12 +45,17 @@ $(document).ready(function() {
     var userInput = parseInt($('input').val());
     var pingPongArray = inputToArray(userInput);
 
+    var reverseArray = numberArray.slice(" ");
+
+    reverseArray.reverse();
+
     numberArray.toString();
 
     $("#result").append("<h1>" + numberArray + "</h1>");
     $("#result").append("<h1>" + reverseArray + "</h1>");
 
     numberArray = [];
+    reverseArray = [];
   });
   $("form").submit(function(event) {
     $(this).closest('form').find("input[type=text], textarea").val("");
