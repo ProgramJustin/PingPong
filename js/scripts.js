@@ -4,7 +4,7 @@ var inputToArray = function(userInput) {
 
 if (numberArray[0] === undefined) {
   numberArray.push(userInput);
-  }
+}
   for (var i = 0; i < numberArray.length; i--) {
 
       numberArray.unshift(userInput -= 1);
@@ -35,7 +35,6 @@ if (numberArray[0] === undefined) {
     }
   }
 }
-
 //UI LOGIC
 $(document).ready(function() {
 
@@ -44,17 +43,17 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = parseInt($('input').val());
-
     var pingPongArray = inputToArray(userInput);
 
     numberArray.toString();
 
     $("#result").append("<h1>" + numberArray + "</h1>");
+    $("#result").append("<h1>" + reverseArray + "</h1>");
 
     numberArray = [];
   });
   $("form").submit(function(event) {
     $(this).closest('form').find("input[type=text], textarea").val("");
-      event.preventDefault();
+    event.preventDefault();
   });
 });
