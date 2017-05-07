@@ -43,6 +43,7 @@ $(document).ready(function() {
 
   $("form").submit(function(event) {
 
+
     event.preventDefault();
 
     var userInput = parseInt($('input').val());
@@ -54,6 +55,10 @@ $(document).ready(function() {
     $("#result").append("<h4>" + numberArray + "</h4>");
 
   });
-  event.preventDefault();
+
+  $("form").submit(function(event) {
+    $(this).closest('form').find("input[type=text], textarea").val("");
+      event.preventDefault();
+});
 
 });

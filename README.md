@@ -10,7 +10,6 @@
 
 #SPECS:
 
-
 | Objective | Implementation | Status |
 |:-------------:|:-------------:|:-------------:|
 | THE PROGRAM TAKES IN THE USER'S-INPUT AS NUMBER AND STORES IT INTO A VARIABLE WHEN THE USER SUBMITS THE FORM | USER-INPUT: 15 | EXAMPLE: VAR USER-INPUT = 15 |
@@ -21,16 +20,9 @@
 | THE PROGRAM REPLACES EVERY NUMBER DIVISIBLE BY 5 WITH THE STRING "PONG" | EXAMPLE: [1,... "PONG" <-- 6 <--- 7 < -- 8]  | EXAMPLE ARRAY: [4,"PONG", 6, 7] |
 | THE PROGRAM REPLACES EVERY NUMBER DIVISIBLE BY 3 WITH THE STRING "PING" | EXAMPLE: [1 <-- 2 <-- "PING" <-- 4 <--- 5 < -- 6]  | EXAMPLE ARRAY: [2,"PING", 4, 5] |
 
-
-
-
-
-
-### _Th [ClicK here](https://www.epicodus.com/)_
-
 # COMPLETE SET-UP INSTRUCTIONS
-1. DOWNLOAD OR CLONE FROM REPOSITORY [Click here](https://github.com/ProgramJustin/track-suggester)...
-2. OPEN UP FOLDER _TRACK-SUGGESTER_
+1. DOWNLOAD OR CLONE FROM REPOSITORY [Click here](https://github.com/ProgramJustin/PingPong)...
+2. OPEN UP FOLDER _PING-PONG_
 3. DOUBLE-CLICK **index.html**
 
 * Copyright © 2017, Justin Gomez
