@@ -2,8 +2,13 @@
 var numberArray = [];
 var inputToArray = function(userInput) {
 
-if (numberArray[0] === undefined) {
+  if (userInput === 0) {
+
+    return false;
+
+  } else if (numberArray[0] === undefined) {
   numberArray.push(userInput);
+
 }
   for (var i = 0; i < numberArray.length; i--) {
 
@@ -43,6 +48,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = parseInt($('input').val());
+
     var pingPongArray = inputToArray(userInput);
 
     var reverseArray = numberArray.slice(" ");
